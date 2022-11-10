@@ -31,7 +31,7 @@ List of Algorithms:
    
    ![image](https://user-images.githubusercontent.com/116657293/201183032-e4f08c81-3ece-415a-b3d4-25ccf5729271.png)
    
-4) Canberra Distance: numerical measure of the distance between pairs of points in a vector space. It is used to compare ranked lists.
+4) Canberra Distance: numerical measure of the distance between pairs of points in a vector space. It is used to compare ranked lists.          
    *Fun fact: Also used for intrusion detection in computer security (IDS).*
    Formally: (For P = (p1, p2, ... , pn) and Q = (q1, q2, ... , qn))
    
