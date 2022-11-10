@@ -4,7 +4,7 @@ Second task for Advanced Programming 1 course
 Authors:
 Gal Pearl
 Dekel Schreiber
-[Screenshots are taken from official pages in Wikipedia]
+
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 Compliation Instructions:
