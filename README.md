@@ -22,3 +22,8 @@ List of Algorithms:
    Points are represented by arrays with N slots.Calculation will present the sum of lengths of the projections of the line segment between points onto the coordinate      axes. Formally:
    
    ![image](https://user-images.githubusercontent.com/116657293/201179543-c6ef7476-f613-4903-acb6-cb0a0cbf0a75.png)
+
+3) Chebyshev Distance: The distance is defined by the greatest distance difference, between two vectors, in a vector space.
+   Each vector will be represented by N numbers (N >= 1), and will be represented as an array. For each Xi and Yi, as Xi is a coord. from X, and Yi from Y,
+   will return the max distance of Xi - Yi, for each i in range of 1 to N. Formally:
+   ![image](https://user-images.githubusercontent.com/116657293/201183032-e4f08c81-3ece-415a-b3d4-25ccf5729271.png)
