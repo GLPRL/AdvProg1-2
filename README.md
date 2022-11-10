@@ -41,3 +41,5 @@ List of Algorithms:
 ![image](https://user-images.githubusercontent.com/116657293/201184801-bcb3d888-f0a9-4b54-8b15-e9f8aa8c3509.png)
 
    As for P: The formula uses P=1 or P=2, which corresponds to the Manhattan and Euclidean formulas, respectively.
+
+Images and some explanations sourced from Wikipedia pages of the distance formulas
