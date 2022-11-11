@@ -55,8 +55,8 @@ int main() {
     }
 
     Euclidean(v1, v2, size);
-    //Manhattan(v1, v2, size);
-    //Chebyshev(v1, v2, size);
+    Manhattan(v1, v2, size);
+    Chebyshev(v1, v2, size);
     Canberra(v1, v2, size);
     //Minkowski(v1, v2, size);
 }
