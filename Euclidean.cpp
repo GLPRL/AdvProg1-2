@@ -24,6 +24,6 @@ void Euclidean() {
         dist[i] = pow(p[i] - q[i], 2);
 
     float total = EuclideanDist(dist, dim);
-    cout << "Distance between the vectors is: " << total << endl;
+    cout << "Euclidean Distance between the vectors is: " << total << endl;
 
 }
