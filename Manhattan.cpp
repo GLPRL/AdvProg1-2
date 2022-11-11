@@ -8,7 +8,7 @@
  */
 using namespace std;
 
-void Manhattan(int *v1, int *v2, int size) {
+void manhattan(int *v1, int *v2, int size) {
     double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += fabs(v1[i] - v2[i]);

@@ -13,7 +13,7 @@ using namespace std;
  * @param v2
  * @param dim
  */
-void Canberra(int* v1, int* v2, int dim) {
+void canberra(int* v1, int* v2, int dim) {
     double *dist = new double[dim];
     for (int i = 0; i < dim; i++) {                             //Inner calculations for division.
         dist[i] = fabs(v1[i] - v2[i]) / (abs(v1[i]) + abs(v2[i]));
