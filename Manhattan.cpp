@@ -1,11 +1,11 @@
-/*
- * Created by Gal Pearl on 11/11/2022.
- * The file will run a Manhattan Distance calculation procedure.
-*/
+
 #include "iostream"
 #include "cmath"
 #include <iomanip>
-
+/**
+ receives 2 vectors represented by arrays and their size.
+ calculates their Manhattan distance and prints it.
+ */
 using namespace std;
 
 void Manhattan(int *v1, int *v2, int size) {

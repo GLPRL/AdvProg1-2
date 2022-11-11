@@ -1,13 +1,13 @@
-/*
- * Created by Gal Pearl on 11/11/2022.
- * The file will run a Chebyshev Distance calculation procedure.
-*/
+
 #include "iostream"
 #include "cmath"
 #include <iomanip>
 
 using namespace std;
-
+/**
+ receives 2 vectors represented by arrays and their size.
+ calculates their Chebyshev distance, and prints it.
+ */
 void Chebyshev(int *v1, int *v2, int size) {
     double max = 0;
     int tempSum;

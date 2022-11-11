@@ -1,6 +1,5 @@
-/*
- * Created by Gal Pearl on 11/11/2022.
- * This class will be running the operations, calling a formula to calculate according to user's choice.
+/**
+ Receives two vectors from the user and calculates various types of distances between them.
 */
 #include "Euclidean.cpp"
 #include "Canberra.cpp"
@@ -9,8 +8,11 @@
 #include "Minkowski.cpp"
 
 using namespace std;
-// Utility function to print options for user to select.
-int* ExtendArray(int *OldV, int size) {
+
+/**
+ A function that extends an array size by 1.
+ */
+int *ExtendArray(int *OldV, int size) {
     int newSize = size + 1;
     int *NewV = new int[newSize];
     for (int i = 0; i < size; i++) {
@@ -20,7 +22,10 @@ int* ExtendArray(int *OldV, int size) {
     return NewV;
 
 }
-int* BuildArray(int *v, int& size) {
+/**
+ Builds vector array of unknown size according to user input.
+ */
+int *BuildArray(int *v, int &size) {
     int x;
     cin >> x;
     int current = 0;
@@ -30,8 +35,8 @@ int* BuildArray(int *v, int& size) {
             v[current] = x;
             current++;
         } else if (current == size) {
-            v = ExtendArray(v,size);
-            v [current] = x;
+            v = ExtendArray(v, size);
+            v[current] = x;
             current++;
             size++;
         }
@@ -42,12 +47,13 @@ int* BuildArray(int *v, int& size) {
     }
     return v;
 }
+
 int main() {
     int *v1 = new int[1];
     int size = 1;
     v1 = BuildArray(v1, size);                //Building first vector
 
-    int* v2 = new int[size];
+    int *v2 = new int[size];
     int x;
     for (int i = 0; i < size; i++) {            //Building second vector.
         cin >> x;
