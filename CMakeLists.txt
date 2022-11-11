@@ -4,4 +4,5 @@ project(AdvProg1_2)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(AdvProg1_2
-        mainDistance.cpp)
+        mainDistance.cpp
+        Utils.cpp)
