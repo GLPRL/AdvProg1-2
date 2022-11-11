@@ -14,7 +14,6 @@ using namespace std;
  * @param dim Our current dimension.
  */
 void Euclidean(int* v1, int* v2, int dim) {
-
     int *dist = new int[dim];
     for (int i = 0; i < dim; i++)                           //Inner summary and raising by power of 2.
         dist[i] = pow(v1[i] - v2[i], 2);
