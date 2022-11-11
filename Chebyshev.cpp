@@ -2,7 +2,6 @@
 #include "iostream"
 #include "cmath"
 #include <iomanip>
-
 using namespace std;
 /**
  receives 2 vectors represented by arrays and their size.
