@@ -2,40 +2,65 @@
  * Created by Gal Pearl on 11/11/2022.
  * This class will be running the operations, calling a formula to calculate according to user's choice.
 */
-
 #include "Euclidean.cpp"
-#include "Chebyshev.cpp"
 #include "Canberra.cpp"
-#include "Minkowski.cpp"
+#include "Chebyshev.cpp"
 #include "Manhattan.cpp"
-#include "iostream"
+#include "Minkowski.cpp"
 
 using namespace std;
 // Utility function to print options for user to select.
-void printSelections() {
-    cout << "Please select your method to calculate:" << endl << "\t 1. Euclidean Distance" << endl
-         << "\t 2. Manhattan Geometry" << endl << "\t 3. Chebyshev Distance" <<
-         endl << "\t 4. Canberra Distance" << endl << "\t 5. Minkowski Distance" << endl;
-}
+int* ExtendArray(int *oldArray, int size) {
+    int newSize = size + 1;
+    int *newArray = new int[newSize];
+    for (int i = 0; i < size; i++) {
+        newArray[i] = oldArray[i];
+    }
+    delete[] oldArray;
+    return newArray;
 
-int main() {
-    cout << "Please select your method to calculate:" << endl;
-    printSelections();
+}
+int* BuildArray(int *p, int& size) {
     int x;
     cin >> x;
-    while (x > 5 || x < 1) {
-        cout << "Wrong selection!" << endl;
-        printSelections();
+    int current = 0;
+
+    while (true) {
+        if (current != size) {
+            p[current] = x;
+            current++;
+        } else if (current == size) {
+            p = ExtendArray(p,size);
+            p [current] = x;
+            current++;
+            size++;
+        }
+        if (cin.peek() == '\n') {
+            break;
+        }
         cin >> x;
     }
-    if (x == 1)
-        Euclidean();
-    if (x == 2)
-        Manhattan();
-    if (x == 3)
-        Chebyshev();
-    if (x == 4)
-        Canberra();
-    if (x == 5)
-        Minkowski();
+    return p;
+}
+int main() {
+    int *p = new int[1];
+    int size = 1;
+    p = BuildArray(p, size);                //Building first vector
+    for (int i = 0; i < size; i++) {
+        cout << p[i] << endl;
+    }
+    int* q = new int[size];
+    int x;
+    for (int i = 0; i < size; i++) {            //Building second vector.
+        cin >> x;
+        q[i] = x;
+    }
+    for (int i = 0; i < size; i++) {
+        cout << q[i] << endl;
+    }
+    Euclidean(p, q, size);
+    Manhattan(p, q, size);
+    Chebyshev(p, q, size);
+    Canberra(p, q, size);
+    //Minkowski(p, q, size);
 }

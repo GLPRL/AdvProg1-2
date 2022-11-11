@@ -6,15 +6,10 @@
 #include "cmath"
 using namespace std;
 
-    void EnterElements(int *arr, int dim) {
-        for (int i = 0; i < dim; i++) {
-            cout << i << "element; out of: " << dim << endl;
-            cin >> arr[i];
-        }
-    }
     float EuclideanDist (int* arr, int dim) {
         float total = 0;
-        for (int i = 0; i < dim; i++)
-            total += arr[i];
-        return sqrt(total);
+        for (int i = 0; i < dim; i++) {
+        total += arr[i];
+        }
+        return sqrtf(total);
 }
