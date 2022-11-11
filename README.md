@@ -8,7 +8,8 @@ Dekel Schreiber
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 Compliation Instructions:
-{TBF}
+g++ MainDistance.cpp -o ex1.out
+(-o for output file)
 
 List of Algorithms:
 
