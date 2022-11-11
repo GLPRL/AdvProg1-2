@@ -1,0 +1,3 @@
+C:/Users/Dekel/CLionProjects/AdvProg1-2/cmake-build-debug/CMakeFiles/AdvProg1_2.dir
+C:/Users/Dekel/CLionProjects/AdvProg1-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dekel/CLionProjects/AdvProg1-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
