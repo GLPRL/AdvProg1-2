@@ -12,7 +12,7 @@ Compliation Instructions:
 
 List of Algorithms:
 
-1) Euclidian Distance: We receive two points, each one will be represented as an array - the size of the array is as the size of the dimension.
+1) Euclidean Distance: We receive two points, each one will be represented as an array - the size of the array is as the size of the dimension.
    Points will be marked as P and Q, and coordinates will be marked as p1, p2, p3 .... and q1, q2, q3 .... for each i, qi and pi will be the coordinate of the
    point, and i will not be larger than the size of the dimension. General idea:
    
