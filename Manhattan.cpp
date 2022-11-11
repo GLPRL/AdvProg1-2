@@ -5,13 +5,13 @@
 #include "iostream"
 #include "cmath"
 #include "Utils.cpp"
+
 using namespace std;
 
-void Manhattan() {
-    int dim;
-    cout << "Please select how many dimensions" << endl;
-    cin >> dim;
-    int *p = new int[dim];
-    int *q = new int[dim];
-    return;
+void Manhattan(int *v1, int *v2, int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += fabs(v1[i] - v2[i]);
+    }
+    cout << sum << endl;
 }
