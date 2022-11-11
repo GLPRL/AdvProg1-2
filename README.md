@@ -11,6 +11,12 @@ Compliation Instructions:
 g++ MainDistance.cpp -o ex1.out
 (-o for output file)
 
+In this project, we created a Main file, which will handle all the basic requirements -
+Building the vectors according to the user's input, determining the dimensions, and maintaining the order of execution for the different algorithms.
+
+Each algorithm implementation receives the two pre-built vectors and the dimension (Order of execution is similar to the order of the list),
+and located in it's own, unique file.
+
 List of Algorithms:
 
 1) Euclidean Distance: We receive two points, each one will be represented as an array - the size of the array is as the size of the dimension.
