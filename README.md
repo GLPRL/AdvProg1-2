@@ -13,9 +13,8 @@ g++ MainDistance.cpp -o ex1.out
 
 In this project, we created a Main file, which will handle all the basic requirements -
 Building the vectors according to the user's input, determining the dimensions, and maintaining the order of execution for the different algorithms.
-
-Each algorithm implementation receives the two pre-built vectors and the dimension (Order of execution is similar to the order of the list),
-and located in it's own, unique file.
+Each algorithm resides in its own C++ source file. Each source file contains a function that calculates the distance between two given vectors according to the algorithm.
+The main file uses #include instruction in order to run the calculations. 
 
 List of Algorithms:
 
