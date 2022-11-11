@@ -3,8 +3,8 @@
  * The file will run a Euclidean Distance calculation procedure.
  */
 #include "iostream"
-#include <iomanip>
 #include "cmath"
+#include <iomanip>
 using namespace std;
 
 void Euclidean(int* v1, int* v2, int dim) {

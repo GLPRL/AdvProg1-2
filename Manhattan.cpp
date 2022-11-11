@@ -5,7 +5,6 @@
 #include "iostream"
 #include "cmath"
 #include <iomanip>
-
 using namespace std;
 
 void Manhattan(int *v1, int *v2, int size) {

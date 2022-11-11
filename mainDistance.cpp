@@ -20,6 +20,7 @@ int* ExtendArray(int *OldV, int size) {
     return NewV;
 
 }
+//Building the new array and recording it's size.
 int* BuildArray(int *v, int& size) {
     int x;
     cin >> x;
@@ -49,7 +50,7 @@ int main() {
 
     int* v2 = new int[size];
     int x;
-    for (int i = 0; i < size; i++) {            //Building second vector.
+    for (int i = 0; i < size; i++) {                //Building second vector.
         cin >> x;
         v2[i] = x;
     }
