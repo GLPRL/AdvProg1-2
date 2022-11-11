@@ -1,6 +1,6 @@
 /*
- Created by Gal Pearl on 11/11/2022.
- This class will be running the operations, calling a formula to calculate according to user's choice.
+ * Created by Gal Pearl on 11/11/2022.
+ * This class will be running the operations, calling a formula to calculate according to user's choice.
 */
 
 #include "Euclidean.cpp"
