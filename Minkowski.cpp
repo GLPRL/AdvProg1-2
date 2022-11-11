@@ -3,6 +3,8 @@
  * The file will run a Minkowski Distance calculation procedure.
 */
 #include "iostream"
+#include "cmath"
+#include "Utils.cpp"
 using namespace std;
 
 void Minkowski() {
