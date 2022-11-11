@@ -4,17 +4,18 @@
 */
 #include "iostream"
 #include "cmath"
+#include <iomanip>
 using namespace std;
 
-void Canberra(int* p, int*q, int dim) {
+void Canberra(int* v1, int* v2, int dim) {
 
     double *dist = new double[dim];
     for (int i = 0; i < dim; i++) {                             //Inner calculations
-        dist[i] = fabs(p[i] - q[i]) / (abs(p[i]) + abs(q[i]));
+        dist[i] = fabs(v1[i] - v2[i]) / (abs(v1[i]) + abs(v2[i]));
     }
     double sum = 0;
     for (int i = 0; i < dim; i++) {                             //Summary of elements according to the formula,
         sum += dist[i];                                         //Repr. the Sigma
     }
-    cout << sum << endl;
+    cout << fixed << setprecision(1) << sum << endl;
 }

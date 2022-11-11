@@ -10,28 +10,28 @@
 
 using namespace std;
 // Utility function to print options for user to select.
-int* ExtendArray(int *oldArray, int size) {
+int* ExtendArray(int *OldV, int size) {
     int newSize = size + 1;
-    int *newArray = new int[newSize];
+    int *NewV = new int[newSize];
     for (int i = 0; i < size; i++) {
-        newArray[i] = oldArray[i];
+        NewV[i] = OldV[i];
     }
-    delete[] oldArray;
-    return newArray;
+    delete[] OldV;
+    return NewV;
 
 }
-int* BuildArray(int *p, int& size) {
+int* BuildArray(int *v, int& size) {
     int x;
     cin >> x;
     int current = 0;
 
     while (true) {
         if (current != size) {
-            p[current] = x;
+            v[current] = x;
             current++;
         } else if (current == size) {
-            p = ExtendArray(p,size);
-            p [current] = x;
+            v = ExtendArray(v,size);
+            v [current] = x;
             current++;
             size++;
         }
@@ -40,27 +40,23 @@ int* BuildArray(int *p, int& size) {
         }
         cin >> x;
     }
-    return p;
+    return v;
 }
 int main() {
-    int *p = new int[1];
+    int *v1 = new int[1];
     int size = 1;
-    p = BuildArray(p, size);                //Building first vector
-    for (int i = 0; i < size; i++) {
-        cout << p[i] << endl;
-    }
-    int* q = new int[size];
+    v1 = BuildArray(v1, size);                //Building first vector
+
+    int* v2 = new int[size];
     int x;
     for (int i = 0; i < size; i++) {            //Building second vector.
         cin >> x;
-        q[i] = x;
+        v2[i] = x;
     }
-    for (int i = 0; i < size; i++) {
-        cout << q[i] << endl;
-    }
-    Euclidean(p, q, size);
-    Manhattan(p, q, size);
-    Chebyshev(p, q, size);
-    Canberra(p, q, size);
-    //Minkowski(p, q, size);
+
+    Euclidean(v1, v2, size);
+    //Manhattan(v1, v2, size);
+    //Chebyshev(v1, v2, size);
+    Canberra(v1, v2, size);
+    //Minkowski(v1, v2, size);
 }

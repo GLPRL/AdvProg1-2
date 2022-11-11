@@ -6,10 +6,10 @@
 #include "cmath"
 using namespace std;
 
-    float EuclideanDist (int* arr, int dim) {
+    float EuclideanDist (int* v, int dim) {
         float total = 0;
         for (int i = 0; i < dim; i++) {
-        total += arr[i];
+        total += v[i];
         }
         return sqrtf(total);
 }
