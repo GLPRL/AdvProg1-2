@@ -4,9 +4,10 @@
 #include <iomanip>
 #include <vector>
 using namespace std;
+
 /**
- receives 2 vectors.
- calculates their Manhattan distance and prints it.
+ * receives 2 vectors.
+ * calculates their Manhattan distance and prints it.
  */
 void manhattan(vector<int> v1, vector<int> v2) {
     double sum = 0;
