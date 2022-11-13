@@ -7,20 +7,23 @@ Dekel Schreiber
 
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
-Compliation Instructions:
+**Compliation Instructions:**
 g++ MainDistance.cpp Algorithms.cpp
 
-
+##General implementation details
 In this project, we created a Main file, which will handle all the basic requirements -
-Building the vectors according to the user's input, determining the dimensions, and maintaining the order of execution for the different algorithms.
-Each algorithm resides in its own C++ source file. Each source file contains a function that calculates the distance between two given vectors according to the algorithm.
-The main file uses #include instruction in order to run the calculations. 
+Building the vectors according to the user's input, and maintaining the order of execution and printing the results of the different algorithms.
+The algorithms implementation reside in Algorithms.cpp source file. There is also a header file Algorithms.h for this source file which the main includes in order to have access to the algorithms.
+The  Algorithms are implemented in accordance to the guidlines that are listed below.
+Note on Minkowski Distance  - As for P: The formula uses P=1 or P=2, which corresponds to the Manhattan and Euclidean formulas, respectively.
+In this task, we take P=2 only, as stated by TA. So eventually, it'll run Euclidean formula.
+   
 
 List of Algorithms:
 
 1) Euclidean Distance: We receive two points, each one will be represented as an array - the size of the array is as the size of the dimension.
    Points will be marked as P and Q, and coordinates will be marked as p1, p2, p3 .... and q1, q2, q3 .... for each i, qi and pi will be the coordinate of the
-   point, and i will not be larger than the size of the dimension. General idea:
+   point, and "i" will not be larger than the size of the dimension. General idea:
    
    ![image](https://user-images.githubusercontent.com/116657293/201177857-87b63e5f-3d96-40c0-8830-92bd56ce6340.png)
    
