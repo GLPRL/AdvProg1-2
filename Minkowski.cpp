@@ -1,5 +1,3 @@
-
-#include "Euclidean.cpp"
 using namespace std;
 /**
  * Minkowski can work in 3 different ways, according to P:
