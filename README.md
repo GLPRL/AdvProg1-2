@@ -8,7 +8,7 @@ Dekel Schreiber
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 Compliation Instructions:
-g++ MainDistance.cpp Algorithms.cpp -o distances.out
+g++ MainDistance.cpp Algorithms.cpp
 
 
 In this project, we created a Main file, which will handle all the basic requirements -
