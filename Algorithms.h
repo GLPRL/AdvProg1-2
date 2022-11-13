@@ -9,9 +9,9 @@ using namespace std;
 #include "cmath"
 #include <iomanip>
 #include "iostream"
-void minkowski(vector<int> v1, vector<int> v2);
-void canberra(vector<int> v1, vector<int> v2);
-void euclidean(vector<int> v1, vector<int> v2);
-void chebyshev(vector<int> v1, vector<int> v2);
-void manhattan(vector<int> v1, vector<int> v2);
+double minkowski(vector<int> v1, vector<int> v2);
+double canberra(vector<int> v1, vector<int> v2);
+double euclidean(vector<int> v1, vector<int> v2);
+double chebyshev(vector<int> v1, vector<int> v2);
+double manhattan(vector<int> v1, vector<int> v2);
 #endif //ADVPROG1_2_ALGORITHMS_H
