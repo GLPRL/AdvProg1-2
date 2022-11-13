@@ -7,10 +7,10 @@ using namespace std;
 /**
  Reads a vector from the user.
 */
-vector<int> readVector() {
-    int x;
+vector<double> readVector() {
+    double x;
     cin >> x;
-    vector<int> v;
+    vector<double> v;
     v.push_back(x);
     while (cin.peek() != '\n') {
         cin >> x;
@@ -20,8 +20,8 @@ vector<int> readVector() {
 }
 
 int main() {
-    vector<int> v1 = readVector();
-    vector<int> v2 = readVector();
+    vector<double> v1 = readVector();
+    vector<double> v2 = readVector();
     if (v1.size() != v2.size()) {
         cout << "Error: vectors are not the same size" << endl;
         return 0;
