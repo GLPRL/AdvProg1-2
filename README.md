@@ -8,7 +8,13 @@ Dekel Schreiber
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 Compliation Instructions:
-{TBF}
+g++ MainDistance.cpp -o ex1.out
+(-o for output file)
+
+In this project, we created a Main file, which will handle all the basic requirements -
+Building the vectors according to the user's input, determining the dimensions, and maintaining the order of execution for the different algorithms.
+Each algorithm resides in its own C++ source file. Each source file contains a function that calculates the distance between two given vectors according to the algorithm.
+The main file uses #include instruction in order to run the calculations. 
 
 List of Algorithms:
 
@@ -41,5 +47,6 @@ List of Algorithms:
 ![image](https://user-images.githubusercontent.com/116657293/201184801-bcb3d888-f0a9-4b54-8b15-e9f8aa8c3509.png)
 
    As for P: The formula uses P=1 or P=2, which corresponds to the Manhattan and Euclidean formulas, respectively.
+   In this task, we take P=2 only, as stated by TA. So eventually, it'll run Euclidean formula.
 
 Images and some explanations sourced from Wikipedia pages of the distance formulas
