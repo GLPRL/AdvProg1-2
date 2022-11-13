@@ -28,7 +28,8 @@ void euclidean(vector<int> v1, vector<int> v2) {
  * @param v2 Second vector.
  */
 void minkowski(vector<int> v1, vector<int> v2) {
-    euclidean(v1, v2);
+    euclidean(v1,v2);
+
 }
 /**
  * Canberra Distance algorithm. Prints the distance between two vectors,
