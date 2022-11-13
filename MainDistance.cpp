@@ -1,12 +1,8 @@
 /**
  Receives two vectors from the user and calculates various types of distances between them.
 */
-#include "Euclidean.cpp"
-#include "Canberra.cpp"
-#include "Chebyshev.cpp"
-#include "Manhattan.cpp"
-#include "Minkowski.cpp"
-#include <vector>
+#include "Algorithms.h";
+#include "Algorithms.cpp";
 using namespace std;
 /**
  Reads a vector from the user.
