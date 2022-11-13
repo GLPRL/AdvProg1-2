@@ -43,7 +43,11 @@ double minkowski(vector<int> v1, vector<int> v2) {
 double canberra(vector<int> v1, vector<int> v2) {
     vector<double> dist;
     for (int i = 0; i < v1.size(); i++) {                               //Inner calculations for division.
-        dist.push_back(fabs(v1[i] - v2[i]) / (abs(v1[i]) + abs(v2[i])));
+        if (v1[i] !=0 && v2[i] != 0) {                                       //Check if we div. by 0
+            dist.push_back(fabs(v1[i] - v2[i]) / (abs(v1[i]) + abs(v2[i])));
+        } else {
+            dist.push_back(0);
+        }
     }
     double sum = 0;
     for (int i = 0; i < v1.size(); i++) {                               //Summary of elements according to the formula,
