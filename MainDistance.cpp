@@ -1,8 +1,7 @@
 /**
  Receives two vectors from the user and calculates various types of distances between them.
 */
-#include "Algorithms.h";
-#include "Algorithms.cpp";
+#include "Algorithms.h"
 using namespace std;
 /**
  Reads a vector from the user.
