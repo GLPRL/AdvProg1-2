@@ -1,6 +1,5 @@
 
 #include "Algorithms.h"
-
 /**
  * Euclidean Distance algorithm. Prints the distance between two vectors,
  * With precision of 17 digits to the right of the decimal point.

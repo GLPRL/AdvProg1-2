@@ -26,11 +26,12 @@ int main() {
         cout << "Error: vectors are not the same size" << endl;
         return 0;
     }
-    cout << defaultfloat << setprecision(17) << euclidean(v1, v2) << endl;
+    cout << setprecision(17) << euclidean(v1, v2) << endl;
     cout << fixed << setprecision(1) << manhattan(v1, v2) << endl;
     cout << fixed << setprecision(1) << chebyshev(v1, v2) << endl;
     cout << fixed << setprecision(1) << canberra(v1, v2) << endl;
-    cout << defaultfloat << setprecision(17) << minkowski(v1, v2) << endl;
+    cout.unsetf(std::ios_base::floatfield);
+    cout << setprecision(17) << minkowski(v1, v2) << endl;
 
 
 }
