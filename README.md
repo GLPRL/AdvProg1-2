@@ -8,7 +8,8 @@ Dekel Schreiber
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 Compliation Instructions:
-{TBF}
+g++ MainDistance.cpp Algorithms.cpp -o distances.out
+
 
 In this project, we created a Main file, which will handle all the basic requirements -
 Building the vectors according to the user's input, determining the dimensions, and maintaining the order of execution for the different algorithms.
