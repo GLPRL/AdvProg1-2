@@ -16,6 +16,7 @@ In this project, we created a Main file, which will handle all the basic require
 Building the vectors according to the user's input, and maintaining the order of execution and printing the results of the different algorithms.
 The algorithms implementation reside in Algorithms.cpp source file. There is also a header file Algorithms.h for this source file which the main includes in order to have access to the algorithms.
 The  Algorithms are implemented in accordance to the guidlines that are listed below.
+
 Note on Minkowski Distance  - As for P: The formula uses P=1 or P=2, which corresponds to the Manhattan and Euclidean formulas, respectively.
 In this task, we take P=2 only, as stated by TA. So eventually, it'll run Euclidean formula.
    
