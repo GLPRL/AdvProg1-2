@@ -2,6 +2,7 @@
 #include "iostream"
 #include "cmath"
 #include <iomanip>
+#include <vector>
 using namespace std;
 /**
  receives 2 vectors.
