@@ -24,6 +24,12 @@ vector <int> readVector(){
 int main() {
     vector<int> v1=readVector();
     vector<int> v2=readVector();
+    for (int i=0;i<3;i++){
+        cout<<v1[i]<<endl;
+    }
+    for (int i=0;i<3;i++){
+        cout<<v2[i]<<endl;
+    }
     // Makes sure that both vectors are the same size.
     if(v1.size()!=v2.size()){
         cout<<"Error: vectors are not the same size"<<endl;
