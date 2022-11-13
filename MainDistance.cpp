@@ -1,14 +1,12 @@
 /**
  Receives two vectors from the user and calculates various types of distances between them.
 */
-#include "Euclidean.cpp"
+using namespace std;
 #include "Canberra.cpp"
 #include "Chebyshev.cpp"
+#include "Euclidean.cpp"
 #include "Manhattan.cpp"
 #include "Minkowski.cpp"
-
-using namespace std;
-
 /**
  A function that extends an array size by 1.
  */
@@ -59,7 +57,6 @@ int main() {
         cin >> x;
         v2[i] = x;
     }
-
     euclidean(v1, v2, size);
     manhattan(v1, v2, size);
     chebyshev(v1, v2, size);

@@ -1,11 +1,12 @@
 
-#include "iostream"
-#include "cmath"
-#include <iomanip>
+
 /**
  receives 2 vectors represented by arrays and their size.
  calculates their Manhattan distance and prints it.
  */
+#include "iostream"
+#include "cmath"
+#include <iomanip>
 using namespace std;
 
 void manhattan(int *v1, int *v2, int size) {
