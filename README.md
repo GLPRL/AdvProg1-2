@@ -10,7 +10,8 @@ In this task, there will be five algorithms for calculating vectors, in differen
 **Compliation Instructions:**
 g++ MainDistance.cpp Algorithms.cpp
 
-##General implementation details
+## General implementation details
+
 In this project, we created a Main file, which will handle all the basic requirements -
 Building the vectors according to the user's input, and maintaining the order of execution and printing the results of the different algorithms.
 The algorithms implementation reside in Algorithms.cpp source file. There is also a header file Algorithms.h for this source file which the main includes in order to have access to the algorithms.
