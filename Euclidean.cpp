@@ -12,7 +12,7 @@ using namespace std;
  * @param v2 Second vector.
  */
 void euclidean(vector<int> v1, vector<int> v2) {
-    vector<int> dist;
+    vector<double> dist;
     for (int i = 0; i < v1.size(); i++) {                               //Inner summary and raising by power of 2.
         dist.push_back(pow(v1[i] - v2[i], 2));
     }
@@ -20,6 +20,6 @@ void euclidean(vector<int> v1, vector<int> v2) {
     for (int i = 0; i < v1.size(); i++) {
         total += dist[i];
     }
-    total = sqrt(total);                                                //Square-root on the total of the summary.
+    total = (double) sqrt(total);                                                //Square-root on the total of the summary.
     cout <<  setprecision(17) << total << endl;
 }
