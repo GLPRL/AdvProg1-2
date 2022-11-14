@@ -8,7 +8,22 @@ Dekel Schreiber
 In this task, there will be five algorithms for calculating vectors, in different approaches.
 
 **Compliation Instructions:**
+First, clone to repository, with
+```
+git clone https://github.com/GLPRL/AdvProg1-2
+```
+Then, head into the directory with
+```
+cd AdvProg1-2
+```
+And compile:
+```
 g++ MainDistance.cpp Algorithms.cpp
+```
+Run with the default file:
+```
+./a.out
+```
 
 ## General implementation details
 
