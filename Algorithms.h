@@ -9,6 +9,7 @@ using namespace std;
 #include "cmath"
 #include <iomanip>
 #include "iostream"
+#include "stdlib.h"
 double minkowski(vector<double> v1, vector<double> v2);
 double canberra(vector<double> v1, vector<double> v2);
 double euclidean(vector<double> v1, vector<double> v2);
