@@ -13,6 +13,12 @@ vector<double> readVector() {
     vector<double> v;
     v.push_back(x);
     while (cin.peek() != '\n') {
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Error: Invalid input. Exiting program." << endl;
+            exit(1);
+        }
         cin >> x;
         v.push_back(x);
     }
@@ -23,7 +29,7 @@ int main() {
     vector<double> v1 = readVector();
     vector<double> v2 = readVector();
     if (v1.size() != v2.size()) {
-        cout << "Error: vectors are not the same size" << endl;
+        cout << "Error: Vectors are not the same size" << endl;
         return 0;
     }
     cout << setprecision(17) << euclidean(v1, v2) << endl;
