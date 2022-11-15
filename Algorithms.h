@@ -7,7 +7,6 @@
 using namespace std;
 #include <vector>
 #include "cmath"
-#include <iomanip>
 #include "iostream"
 #include "stdlib.h"
 double minkowski(vector<double> v1, vector<double> v2);
