@@ -33,13 +33,13 @@ int main() {
         cout << "Error: Vectors are not the same size" << endl;
         return 0;
     }
-    cout.precision(16);
+    cout.precision(5);
     cout << euclidean(v1, v2) << endl;
     cout.precision(1);
     cout << fixed << manhattan(v1, v2) << endl;
     cout << fixed << chebyshev(v1, v2) << endl;
     cout << fixed << canberra(v1, v2) << endl;
-    cout.precision(16);
+    cout.precision(5);
     cout.unsetf(std::ios_base::floatfield);
     cout << minkowski(v1, v2) << endl;
 }
