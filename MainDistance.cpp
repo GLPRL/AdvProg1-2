@@ -2,6 +2,7 @@
  Receives two vectors from the user and calculates various types of distances between them.
 */
 #include "Algorithms.h"
+
 using namespace std;
 
 /**
@@ -32,12 +33,13 @@ int main() {
         cout << "Error: Vectors are not the same size" << endl;
         return 0;
     }
-    cout << setprecision(17) << euclidean(v1, v2) << endl;
-    cout << fixed << setprecision(1) << manhattan(v1, v2) << endl;
-    cout << fixed << setprecision(1) << chebyshev(v1, v2) << endl;
-    cout << fixed << setprecision(1) << canberra(v1, v2) << endl;
+    cout.precision(16);
+    cout << euclidean(v1, v2) << endl;
+    cout.precision(1);
+    cout << fixed << manhattan(v1, v2) << endl;
+    cout << fixed << chebyshev(v1, v2) << endl;
+    cout << fixed << canberra(v1, v2) << endl;
+    cout.precision(16);
     cout.unsetf(std::ios_base::floatfield);
-    cout << setprecision(17) << minkowski(v1, v2) << endl;
-
-
+    cout << minkowski(v1, v2) << endl;
 }
