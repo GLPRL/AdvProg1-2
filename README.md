@@ -18,7 +18,7 @@ cd AdvProg1-2
 ```
 And compile:
 ```
-g++ MainDistance.cpp Algorithms.cpp
+g++ MainDistance.cpp Algorithms.cpp -std=c++11
 ```
 Run with the default file:
 ```
