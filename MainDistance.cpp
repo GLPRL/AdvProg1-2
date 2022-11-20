@@ -6,13 +6,24 @@
 using namespace std;
 
 /**
- Reads a vector from the user.
+ Reads a vector from the user in accordance to the ex1 instructions.
+ Prints an error if the input is not as expected.
 */
 vector<double> readVector() {
     double x;
     cin >> x;
     vector<double> v;
-    v.push_back(x);
+    if (cin.peek() != '\n') {
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore();
+            cout << "Error: Invalid input. Exiting program." << endl;
+            exit(1);
+        } else {
+            v.push_back(x);
+        }
+    }
+    //v.push_back(x);
     while (cin.peek() != '\n') {
         if (cin.fail()) {
             cin.clear();
