@@ -25,7 +25,7 @@ Run with the default file:
 ./a.out
 ```
 
-Due to the new password-less feature on Github, you can also clone it via the Repo page, get into the folder and then
+Due to the new password-less feature on Github, you can also clone it via the Repo page (Code -> Download ZIP), get into the folder and then
 run the usual commands
 ```
 g++ MainDistance.cpp Algorithms.cpp -std=c++11
