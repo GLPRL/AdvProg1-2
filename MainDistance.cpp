@@ -4,7 +4,6 @@
 #include "Algorithms.h"
 #include "string"
 #include <iostream>
-#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -22,7 +21,7 @@ vector<double> readVector2() {
         printf("Error: too many blankspaces ");
         exit(-3);
     }
-    lin = regex_replace(lin, regex(" +"), " ");
+   // lin = regex_replace(lin, regex(" +"), " ");
     printf("%s\n",lin.c_str());
 
     vector<double> v;
