@@ -10,39 +10,44 @@ using namespace std;
  Prints an error if the input is not as expected.
 */
 vector<double> readVector() {
-    double x;
-    cin >> x;
-    vector<double> v;
-    if (cin.peek() != '\n') {
-        if (cin.fail()) {
-            cin.clear();
-            cin.ignore();
-            cout << "Error: Invalid input. Exiting program." << endl;
-            exit(1);
-        } else {
-            v.push_back(x);
-        }
+    string lin;
+    getline(cin, lin);
+    lin = ' ' + lin + " ";
+    // If there is more than one space in a row, then exit the program.
+    if (lin.find("  ") != string::npos) {
+        cout << "Error: too many white spaces" << endl;
+        exit(-3);
     }
-    //v.push_back(x);
-    while (cin.peek() != '\n') {
-        if (cin.fail()) {
-            cin.clear();
-            cin.ignore();
-            cout << "Error: Invalid input. Exiting program." << endl;
-            exit(1);
+    vector<double> v;
+    int pos = 0;
+    double x;
+    char *e;
+    // Loop until the end of the string each time separating the spaces.
+    while ((pos = lin.find(" ")) != string::npos) {
+        string sub = lin.substr(0, pos);
+        x = std::strtod(sub.c_str(), &e);
+        if (*e != '\0')
+        {
+            cout << "Error:" << sub.c_str() << " is not a number" << endl; ;
+            exit(-1);
         }
-        cin >> x;
         v.push_back(x);
+        lin.erase(0, pos + 1);
     }
     return v;
 }
-
+/**
+ * Main function. Summons the vector builders, checks if they are valid, and distance algorithms.
+ * @return code 0 if works as expected.
+ */
 int main() {
+    cout << "Please enter first vector" << endl;
     vector<double> v1 = readVector();
+    cout << "Please enter second vector" << endl;
     vector<double> v2 = readVector();
     if (v1.size() != v2.size()) {
         cout << "Error: Vectors are not the same size" << endl;
-        return 0;
+        exit(-2);
     }
     cout.precision(5);
     cout << euclidean(v1, v2) << endl;
@@ -53,4 +58,5 @@ int main() {
     cout.precision(5);
     cout.unsetf(std::ios_base::floatfield);
     cout << minkowski(v1, v2) << endl;
+    return 0;
 }

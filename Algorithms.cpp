@@ -31,7 +31,6 @@ double euclidean(vector<double> v1, vector<double> v2) {
 double minkowski(vector<double> v1, vector<double> v2) {
     double r = euclidean(v1, v2);
     return r;
-
 }
 
 /**
